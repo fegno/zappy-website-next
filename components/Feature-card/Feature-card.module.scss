@@ -1,0 +1,26 @@
+@import '../../styles/var';
+
+.card_container{
+    background-color: map-get($colors , "secondary" );
+    border-radius: 8px;
+    text-align: center;
+    padding: 25px;
+    max-height: 162px;
+    height: 100%;
+    .card_icon{
+        img{
+            max-width: 60px;
+            width: 100%;
+        }
+    }
+    .card_title{
+        padding: 10px 0;
+    }
+    @include tab{
+        margin-bottom: 40px;
+    }
+    @include phone{
+        margin-bottom: 26px;
+        padding: 25px 10px;
+    }
+}

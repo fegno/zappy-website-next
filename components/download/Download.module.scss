@@ -1,0 +1,18 @@
+@import '../../styles/var';
+
+.app_store_wrapper{
+    a{
+        img{
+            width: 100%;
+            max-width: 140px;
+        }
+    }
+    @include phone{
+        a{
+            img{
+                width: 100%;
+                max-width: 120px;
+            }
+        }
+    }
+}

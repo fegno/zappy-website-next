@@ -1,0 +1,38 @@
+@import '../../styles/var';
+
+.footer_con_wrapper{
+    .contacts{
+        padding: 0;
+        text-align: center;
+        img{
+            max-width: 50px;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+        a{
+            text-decoration: none;
+            color:map-get($colors , "black" ) ;
+            padding: 0 10px;
+            font-size: 13px;
+        }
+        .text{
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+    }
+    @include small-screen{
+        .contacts{
+            a{
+                padding: 0;
+            }
+        }
+    }
+    @include phone{
+        .contacts{
+            text-align: left;
+            padding-left: 13px;
+            margin-bottom: 20px;
+        }
+    }
+}

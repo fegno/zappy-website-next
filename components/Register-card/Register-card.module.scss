@@ -1,0 +1,42 @@
+@import '../../styles/var';
+
+.card_container{
+    background-color: map-get($colors , "secondary" );
+    border-radius: 8px;
+    padding: 25px 20px;
+    .card_wrapper{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .card_heading{
+            font-size: 19px;
+            font-weight: 700;
+        }
+        .card_des{
+            margin: 10px 0 26px;
+            font-size: 13px;
+        }
+        .register_btn{
+            a{
+                background-color: map-get($colors , "dark-green" );
+                text-decoration: none;
+                color: map-get($colors , "white" );
+                padding: 4px 20px 7px;
+                border-radius: 10px;
+            }
+        }
+    }
+    .card_img{
+        text-align: center;
+        img{
+            max-width: 160px;
+            width: 100%;
+        }
+    }
+    @include phone{
+        .card_img{
+            margin-top: 26px;
+        }
+    }
+}

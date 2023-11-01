@@ -1,0 +1,32 @@
+@use "sass:math";
+$html-font-size: 16px;
+@function _rem($size) {
+  $remSize: math.div($size, $html-font-size);
+  @return #{$remSize}rem;
+}
+
+@mixin phone {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin small-screen {
+  @media (max-width:991px){
+    @content;
+  }
+}
+@mixin large-screen {
+  @media (max-width:1200px){
+    @content;
+  }
+}
+@mixin extra-large-screen {
+  @media (max-width:1400px){
+    @content;
+  }
+}

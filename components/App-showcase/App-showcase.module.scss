@@ -1,0 +1,53 @@
+@import '../../styles/var';
+
+.showcase_section{
+    padding: 0 80px;
+    margin: 50px 0;
+    .showcase_img{
+        text-align: center;
+        padding-top: 130%;
+        position: relative;
+        img{
+            // max-width: 800px;
+            width: 100%;
+            background-color: map-get($colors , "white" );
+            top: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .showcase_details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .showcase_name{
+            font-size: 19px;
+            font-weight: 700;
+        }
+        .showcase_dec{
+            font-size: 14px;
+            color: #a3bcbc;
+            margin: 8px 0;
+        }
+    }
+    @include small-screen{
+        padding: 0 40px;
+        .showcase_details{
+            display: inline-block;
+            margin: auto;
+        }
+    }
+    @include phone{
+        .showcase_details{
+            text-align: center;
+        }
+        .showcase_img{
+            margin-bottom: 30px;
+        }
+    }
+}

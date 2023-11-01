@@ -1,0 +1,36 @@
+@import '../../styles/var';
+
+.header_menus{
+    display: flex;
+    justify-content: space-between;
+    .items{
+        padding-right: 30px;
+        color: map-get($colors , "black" );
+        text-decoration: none;
+    }
+    .dropdown{
+        position: relative;
+        .item_name{
+            display: flex;
+            align-items: center;
+            .join_us{
+                padding-right: 6px;
+            }
+        }
+        .submenu{
+            position: absolute;
+            width: 224%;
+            text-align: center;
+            left: -91px;
+            right: 1px;
+            padding: 11px 5px;
+            background: #fff;
+            top: 34px;
+            box-shadow: 0px 0px 3px 0px #ccc;
+            a{
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+}

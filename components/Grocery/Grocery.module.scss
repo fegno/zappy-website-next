@@ -1,0 +1,43 @@
+@import '../../styles/var';
+
+.grocery_section{
+    margin-top: 50px;
+    .grocery_head{
+        font-size: 19px;
+        font-weight: 700;
+        color: map-get($colors , "dark-green" );
+        text-align: center;
+    }
+    .grocery_sub_head{
+        font-size: 16px;
+        color: #a3bcbc;
+        text-align: center;
+    }
+    .grocery_card_section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        .card_head{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .card_img{
+            img{
+                // max-width: 800px;
+                background-color: map-get($colors , "white" );
+                width: 100%;
+                max-width: 480px;
+            }
+        }
+    }
+    @include tab{
+        .grocery_card_section{
+            display: block;
+            text-align: center;
+            .card_img{
+                margin-top: 40px;
+            }
+        }
+    }
+}

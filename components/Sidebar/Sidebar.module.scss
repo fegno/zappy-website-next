@@ -1,0 +1,40 @@
+@import '../../styles/var';
+
+.sidebar_wrapper{
+    // background-color: #fff;
+    .close_btn{
+        text-align: right;
+        padding-top: 20px;
+        button{
+            border: none;
+            background:none;
+            font-size: 25px;
+            color: #00000069;
+        }
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        li{
+            list-style: none;
+            padding: 20px;
+            border-bottom: 1px solid #00000069;
+            color: map-get($colors , "dark-green" );
+            a{
+                text-decoration: none;
+                color: map-get($colors , "dark-green" );
+            }
+            .submenu{
+                margin-top: 10px;
+            }
+            .menus{
+                display: flex;
+                align-items: center;
+                .menu_list{
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
