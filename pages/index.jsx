@@ -1,6 +1,5 @@
 import Layout from "@/components/Layout";
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "@/components/Container";
 import Banner from "@/components/Banner";
 import Features from "@/components/Features";
@@ -11,7 +10,6 @@ import Grocery from "@/components/Grocery";
 
 const HomePage = () => {
   return (
-    <Layout>
         <Container>
             <Banner />
             <Grocery />
@@ -20,7 +18,6 @@ const HomePage = () => {
             <Showcase />
             <DeliveryMan />
         </Container>
-    </Layout>
   );
 };
 

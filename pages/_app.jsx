@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import '../styles/global.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Layout from '@/components/Layout';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -9,7 +11,9 @@ function MyApp({ Component, pageProps }) {
         <title>Zappy</title>
         <link rel="icon" href='/logo.png' />
       </Head>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

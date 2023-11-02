@@ -1,0 +1,47 @@
+@import '../../styles/var';
+
+.about_page_wrapper{
+    .about_title{
+        font-size: 30px;
+        // margin-bottom: 18px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+    .below_title{
+        color: #00e77b;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 18px;
+    }
+    .des{
+        font-size: 18px;
+        // font-weight: 500;
+        color: #717c77;
+    }
+    .about_img{
+        padding-top: 133%;
+        position: relative;
+        display: block;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .about_img_mob{
+        display: none;
+    }
+    @include phone{
+        .about_img{
+            display: none;
+        }
+        .about_img_mob{
+            display: block;
+        }
+    }
+}

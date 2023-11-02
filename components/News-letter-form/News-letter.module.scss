@@ -1,0 +1,32 @@
+@import '../../styles/var';
+
+.news_letter_section{
+    .form_wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .button_wrapper{
+            position: relative;
+            button{
+                margin: 0;
+                outline: none;
+                border: none;
+                box-shadow: none;
+                top: -11px;
+                inset-inline-end: 3px;
+                position: absolute;
+                background-color: #0b8257;
+                border-radius: 50%;
+                padding: 5px 13px 9px 13px;
+                color: #ffffff;
+                font-size: 22px;
+                margin-right: 11px;
+            }
+        }
+    }
+    .error_msg{
+        margin-top: 8px;
+        color: red;
+        text-align: center;
+    }
+}
