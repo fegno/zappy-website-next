@@ -1,21 +1,24 @@
 import React from 'react';
-import style from './Termas-and-conditions.module.scss';
+import style from './Terms-and-conditions.module.scss';
 import Container from '@/components/Container';
+import NewsLetter from '@/components/Newsletter';
 
 const TermAndConditions = () => {
     return (
         <Container>
+            <h2 className={style.heading_wrapper}>
+                Terms And 
+                <span className={style.head}> Conditions</span>
+            </h2>
             <div className={style.terms_conditions_wrapper}>
-                <h4 className={style.heading_wrapper}>
-                    Terms And 
-                    <span className={style.head}>Conditions</span>
-                </h4>
                 <div className={style.tac_body}>
+                    <h5 className={style.sub_head}>
+                        Terms and Conditions
+                    </h5>
                     <div className={style.tac_paras}>
                         <p>
                             These Terms and Conditions ("T&C") govern your use of our application and website, for mobile and handheld devices (“Zappy”) on the Zapiens Platform (the "Platform"). For clarity, the Platform refers to any Platform owned/subscribed/used by Zapiens Innovation Private Limited, not limited to websites, mobile applications, devices, URLs/links, notifications, chatbot, or any other communication medium used by Zapiens entities to provide its services to its users.
-                        </p>
-                        <p>
+                        
                             Zappy is owned and operated by Zapiens Innovation Private Limited, a private limited company incorporated under the Companies Act, 2013 and having its registered office at 21/152, Corrazone, Panadans, Kochi, Kalamassery, Kerala. For the purpose of these T&C, wherever the context so requires, “buyer/s”, “you”, “You”, “your”, “Your”, “user”, or “User”, “End User” shall mean any natural or legal person who shall transact on Zappy by providing registration data while registering on Zappy as a registered user using any computer system, phone or handheld device. The terms "Zapiens", Zappy, “We”, "we", “Us”, "us", “Our” or "our" shall mean Zapiens Innovation Private Limited.
                         </p>
                         <p>
@@ -27,7 +30,7 @@ const TermAndConditions = () => {
                     </div>
                     <div className={style.tac_bolds}>
                         <h5>
-                            <span className={style.head}>Eligibility</span>
+                            <span className={style.tac_head}>Eligibility</span>
                             <br/>
                             By accessing Zappy, you represent that: -<br/>
                             You are 18 years of age or older;<br/>
@@ -159,26 +162,61 @@ const TermAndConditions = () => {
                         </p>
                         <p>
                             Availing Credit<br />
-                        </p>
-
-                        <p>
-
-                        </p>
-                        <p>
-
-                        </p>
-
-                        <p>
-
+                            The option to avail credit from the shop is solely at the discretion of the seller. Zappy does not guarantee or determine the availability or approval of credit for any user.<br />
+                            The seller reserves the right to assess each user's creditworthiness and decide whether to extend credit or not. Zappy is not involved in the credit approval process.<br />
+                            Zappy Application Status<br />
+                            The Zappy application may include a feature that allows users to view the status of credit available to them. However, this information is provided for informational purposes only and does not constitute a guarantee of credit availability.<br />
+                            Zappy shall not be held responsible for any inaccuracies, delays, or errors in displaying the credit status on the application.<br />
+                            Zappy serves as a platform that connects buyers and sellers but does not partake in any transactions between them. Zappy shall not be liable for any disputes, losses, or damages arising from any transactions between the buyers and sellers.<br />
+                            Users agree to provide accurate and up-to-date information when using the Zappy application. Users are solely responsible for any actions taken through their Zappy accounts, including credit availing and transactions with sellers.
                         </p>
                         <p>
-
+                            Return, cancellations, exchange, and refund<br />
+                            Zappy will endeavour to assist buyers who have bonafide disputes about the products delivered or supplied to them by the sellers. The return policy and return policy period depend on the product category, the seller’s refund policy, and the seller.
                         </p>
                         <p>
-
+                            Replacement: If at the time of delivery and/or within the applicable return policy period, any defect is found, then the buyer of the products can ask for replacement of the products from the seller subject to the following terms and conditions:
+                        </p>
+                        <p>
+                            Notify seller of any defects in the products at the time of delivery (Check and ensure the quality/quantity/date of expiry of the products before providing delivery code) of the product/s within the applicable return policy period and the same product/s will be replaced in return for the defective product/s.<br />
+                            Replacement can be for the entire product/s or part/s of the product subject to availability of the same with the seller.<br />
+                            You may also return the product in order if:<br />
+                            the wrong item or items is or are delivered other than what You had ordered in order; or<br />
+                            Item or items are substantially damaged or deteriorated in quality at the time of delivery; and<br />
+                            You agree that you shall give us all the requisite proofs including but not limited to images of product or products having issue or issues.
+                        </p>
+                        <p>
+                            The following products shall not be eligible for return or replacement:<br />
+                            Damages due to misuse of product;<br />
+                            Any consumable item which has been used;<br />
+                            Products with tampered or missing serial/UPC numbers;<br />
+                            Any damage/defect which is not covered under the manufacturer's warranty.<br />
+                            Any product which is returned without its original packaging and accessories, including the box, manufacturer's packaging if any, and all other items originally included with the product/s delivered;
+                        </p>
+                        <p>
+                            Cancellations:<br />
+                            You may cancel an order without charge at any time before the seller accepts the order.<br />
+                            You cannot cancel the order post acceptance of an order by the seller except if <br />
+                            the order could not be delivered within the estimated time while placing the order; or <br />   
+                            if the seller doesn't accept or cancels the order due to reasons not attributable to the buyer, including but not limited to the store being closed, non-availability of items, store being unable to service online orders at that moment, etc. <br />
+                            In all other cases, you may cancel an order without charge at any time before the status of the order changes to “In-Progress” on Zappy. <br />
+                            Zappy reserves the right to look into the cancellation request of the buyer and determine if such a cancellation request falls under the conditions mentioned above. <br />
+                            If Zappy is satisfied that the request fulfils any of the aforesaid conditions, then Zappy shall process the cancellation request made by the buyer.<br />
+                            The seller may cancel an order (in full or partially) for reasons including shortage or unavailability of certain products/brand or force majeure events.<br />
+                            In case the seller cancels any order, you will not be charged for such cancellations, and the seller will refund you for any payment already made.<br />
+                            Zappy reserves the right to cancel the orders in the following circumstances:<br />
+                            Any Item or product is not in stock.<br />
+                            In the event you are claiming a return, refund, or cancellation of a product, you may raise a ticket with customer support for assistance. <br />
+                            Action would be taken basis your interaction and response with the customer support flow as well as the valid proof submitted by you.
+                        </p>
+                        <p>
+                            Zapiens reserves its right to initiate civil and/or criminal proceedings against a user who, files invalid and/or false claims or provides false, incomplete, or misleading information. In addition to the legal proceedings as aforesaid, Zapiens may at its sole discretion suspend, block, restrict, or cancel the display name and its related display names of such user and/or disqualify that user and any related users from availing protection through Zappy. Any person who, knowingly and with intent to injure, defraud or deceive, files a fraudulent complaint containing false, incomplete, or misleading information may be guilty of a criminal offense and will be prosecuted to the fullest extent of the law. 
                         </p>
                     </div>
                 </div>
+            </div>
+            <div className={style.news_letter}>
+                <NewsLetter />
             </div>
         </Container>
     )

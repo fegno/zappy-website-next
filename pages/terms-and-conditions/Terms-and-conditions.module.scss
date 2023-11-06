@@ -1,0 +1,40 @@
+@import '../../styles/var';
+
+.heading_wrapper{
+    text-align: center;
+    margin: 40px 0;
+    .head{
+        color: map-get($colors, "dark-green" );
+    }
+}
+.terms_conditions_wrapper{
+    box-shadow: 0px 4px 20px rgba(4, 97, 165, 0.1);
+    border-radius: 30px;
+    padding: 45px 50px;
+    background-color: map-get($colors , "white" );
+    // margin-bottom: 50px;
+    .tac_body{
+        .sub_head{
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .tac_paras{
+            margin-bottom: 20px;
+           p{
+            color: #717c77;  
+            font-size: 16px;
+            font-weight: 400;
+           }
+        }
+        .tac_bolds{
+            h5{
+                padding-bottom: 20px;
+                color: #2f3934;
+                line-height: 30px;
+            }
+        }
+    }
+    @include phone{
+        padding: 45px 35px;
+    }
+}

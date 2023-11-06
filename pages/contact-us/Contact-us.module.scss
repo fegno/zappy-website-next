@@ -1,0 +1,18 @@
+@import '../../styles/var';
+
+.contact_page{
+    display: flex;
+    justify-content: space-between;
+    .contact_form_sec{
+        background: #ffffff;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 30px;
+        padding: 30px 28px;
+        height: 100%;
+    }
+    @include tab{
+        .contact_form_sec{
+            margin-top: 50px;
+        } 
+    }
+}

@@ -9,7 +9,7 @@ const HeaderMenus = () => {
 
     const MENUS = [
         { name: "Home", link: "/" },
-        { name: "About us", link: "/about-us" },
+        { name: "About us", link: "/about" },
         { name: "Contact us", link: "/contact-us"  },
         { name: "Join us", link: "/join-us" },
       ];
@@ -29,7 +29,7 @@ const HeaderMenus = () => {
                             </span>
                             {subMenu && (
                                 <div className={style.submenu}>
-                                    <Link href="/">Register as a store</Link>
+                                    <Link href="/store-registration">Register as a store</Link>
                                 </div>
                             )}
                         </div>

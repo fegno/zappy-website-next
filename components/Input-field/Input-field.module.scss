@@ -1,18 +1,17 @@
 @import '../../styles/var';
 
 .input_field_wrapper{
-    .label_field{
-
-    }
     .input_field{
         input{
             border: none;
             background: #e0fff1;
-            padding: 15px 20px;
+            padding: 16px 30px;
             width: 100%;
             border-radius: 50px;
-            height: 68px;
-            width: 258px
+            border-radius: 30px;
+            &:focus{
+                outline: none;
+            }
         }
     }
 }

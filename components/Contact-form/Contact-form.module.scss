@@ -1,0 +1,45 @@
+@import '../../styles/var';
+
+.contact_form_wrapper{
+    .contact_form{
+        .error_msg{
+            color: red;
+            padding: 6px 10px;
+            font-size: 14px;
+        }
+        .subject_fld{
+            margin-top: 20px;
+            .full_width{
+                width: 100%;
+            }
+        }
+        .msg_fld{
+            textarea{
+                background: #e0fff1;
+                border-radius: 30px;
+                border: none;
+                padding: 20px;
+                width: 100%;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        .btn_wrapper{
+            text-align: center;
+            margin: 20px 0;
+            button{
+                font-size: 16px;
+                padding: 12px 16px;
+                line-height: 25px;
+                font-weight: 700;
+                background-color: map-get($colors , "dark-green" );
+                color: map-get($colors , "white" );
+                border: none;
+                border-radius: 10px;
+                text-transform: capitalize;
+                font-weight: 400;
+            }
+        }
+    }
+}

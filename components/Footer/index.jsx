@@ -18,11 +18,11 @@ const Footer = () => {
     ];
   
     const FOOTERLINKS = [
-        { name : "About us" , link:"/"},
-        { name : "Contact us" , link:"/"},
-        { name : "Register as a store" , link:"/"},
-        { name : "Privacy policy" , link:"/"},
-        { name : "Terms and conditions" , link:"/"},
+        { name : "About Us" , link:"/about"},
+        { name : "Contact Us" , link:"/contact-us"},
+        { name : "Register As a Store" , link:"/store-registration"},
+        { name : "Privacy Policy" , link:"/privacy-policy"},
+        { name : "Terms and Conditions" , link:"/terms-and-conditions"},
     ];
     return (
             <div className={style.footer_container}>

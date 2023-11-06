@@ -5,6 +5,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        .form_fields{
+            .small_field{
+                padding: 20px;
+                width: 117%;
+            }
+        }
         .button_wrapper{
             position: relative;
             button{
@@ -12,7 +18,7 @@
                 outline: none;
                 border: none;
                 box-shadow: none;
-                top: -11px;
+                top: -23px;
                 inset-inline-end: 3px;
                 position: absolute;
                 background-color: #0b8257;
@@ -20,7 +26,7 @@
                 padding: 5px 13px 9px 13px;
                 color: #ffffff;
                 font-size: 22px;
-                margin-right: 11px;
+                right: -23px;
             }
         }
     }

@@ -38,6 +38,7 @@ const NewsLtrForm  = () => {
                             placeholder="Enter your email address"
                             onChange={handleChange}
                             onBlur={handleBlur}
+                            className={style.small_field}
                         />
                     </div>
                     <div className={style.button_wrapper}>

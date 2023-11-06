@@ -7,8 +7,8 @@ import { LiaAngleDownSolid } from 'react-icons/lia';
 const Sidebar = ({ onClose }) => {
     const MENUS = [
         { name: "Home", link: "/" },
-        { name: "About Us", link: "/" },
-        { name: "Contact Us", link: "/" },
+        { name: "About Us", link: "about" },
+        { name: "Contact Us", link: "/contact-us" },
         { name: "Join Us", link: "/", hasSubmenu: true }, 
     ];
 
@@ -34,7 +34,7 @@ const Sidebar = ({ onClose }) => {
                                 </span>
                                 {isSubmenuVisible && (
                                     <div className={style.submenu}>
-                                        <Link href="/join-us">Register as a store</Link>
+                                        <Link href="/store-registration">Register as a store</Link>
                                     </div>
                                 )}
                             </div>
