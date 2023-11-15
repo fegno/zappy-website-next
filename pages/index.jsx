@@ -21,12 +21,12 @@ const HomePage = () => {
               image={seller.src}
             />
             <Showcase />
-            <RegisterCard 
+            {/* <RegisterCard 
                title="Join as Deliveryman"
                description="Register as a seller and open shop for start your business"  
                link="/"
                image={seller.src}
-            />
+            /> */}
         </Container>
   );
 };

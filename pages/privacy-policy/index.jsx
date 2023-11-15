@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Privacy-policy.module.scss';
 import Container from '@/components/Container';
-import NewsLetter from '@/components/Newsletter';
+import NewsLtrForm from '@/components/News-letter-form';
 
 const PrivacyPolicy = () => {
     return (
@@ -65,9 +65,9 @@ const PrivacyPolicy = () => {
                     </p>
                 </div>
             </div>
-            <div className={style.news_letter}>
-                <NewsLetter />
-            </div>
+            {/* <div className={style.news_letter}>
+                <NewsLtrForm />
+            </div> */}
         </Container>
     )
 }

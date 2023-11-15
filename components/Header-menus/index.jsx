@@ -2,7 +2,7 @@ import React , {useState} from 'react'
 import style from './Header-menu.module.scss';
 import Link from 'next/link';
 import { LiaAngleDownSolid } from 'react-icons/lia';
-
+import ClickAwayListener from 'react-click-away-listener';
 
 const HeaderMenus = () => {
     const [subMenu, setSubMenu] = useState(false);
@@ -28,9 +28,11 @@ const HeaderMenus = () => {
                                 <LiaAngleDownSolid className={`${style.caretIcon} ${subMenu ? style.rotateIcon : ''}`} />
                             </span>
                             {subMenu && (
-                                <div className={style.submenu}>
-                                    <Link href="/store-registration">Register as a store</Link>
-                                </div>
+                                <ClickAwayListener onClickAway={()=>setSubMenu(false)}>
+                                    <div className={style.submenu}>
+                                        <Link href="/store-registration">Register as a store</Link>
+                                    </div>
+                                </ClickAwayListener>
                             )}
                         </div>
                     );

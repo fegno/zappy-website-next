@@ -28,6 +28,9 @@
                 font-size: 20px;
             }
         }
+        .app_links{
+            margin-top: 20px;
+        }
     }
     .footer_link_wrapper{
         background-color: map-get($colors , "secondary" );
@@ -64,6 +67,11 @@
             .footer_links{
                 margin-bottom: 16px;
             }
+        }
+    }
+    @include phone{
+        .footer_wrapper{
+            padding: 30px 15px;
         }
     }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Store-registration.module.scss';
 import Container from '@/components/Container';
 import StoreRegForm from '@/components/Store-reg-form';
-import NewsLetter from '@/components/Newsletter';
+import NewsLtrForm from '@/components/News-letter-form';
 
 const StoreReg = () => {
     return (
@@ -10,9 +10,9 @@ const StoreReg = () => {
             <div className={style.Store_reg_container}>
                 <StoreRegForm />
             </div>
-            <div>
-                <NewsLetter />
-            </div>
+            {/* <div className={style.news_letter}>
+                <NewsLtrForm />
+            </div> */}
         </Container>
     )
 }

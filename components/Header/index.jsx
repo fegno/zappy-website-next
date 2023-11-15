@@ -4,6 +4,7 @@ import HeaderMenus from '../Header-menus';
 import Container from '../Container';
 import logo from '../../assets/logo.png';
 import MobileMenu from '../Mobile-menu';
+import Link from 'next/link';
 
 const Header = () => {
 
@@ -12,7 +13,9 @@ const Header = () => {
             <Container>
                 <div className={style.header_menus}>
                     <div className={style.header_logo}>
-                        <img src={logo.src} alt="img" />
+                        <Link href={"/"}>
+                            <img src={logo.src} alt="img" />
+                        </Link>
                     </div>
                     <div className={style.header_item}>
                         <HeaderMenus />

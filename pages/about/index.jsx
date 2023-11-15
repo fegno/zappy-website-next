@@ -2,7 +2,7 @@ import React from 'react';
 import style from './about.module.scss';
 import store from '../../assets/store.png';
 import Container from '@/components/Container';
-import NewsLetter from '@/components/Newsletter';
+import NewsLtrForm from '@/components/News-letter-form';
 
 const About = () => {
     return (
@@ -28,9 +28,9 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <NewsLetter />
-                </div>
+                {/* <div className={style.news_letter}>
+                    <NewsLtrForm />
+                </div> */}
             </div>
         </Container>
     )

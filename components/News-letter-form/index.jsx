@@ -21,7 +21,6 @@ const NewsLtrForm  = () => {
   }
 
   return (
-        <div className={style.news_letter_section}>
           <Formik
             initialValues={INITIAL_VALUES}
             validationSchema={VALIDATION}
@@ -53,7 +52,6 @@ const NewsLtrForm  = () => {
               </form>
           )}
           </Formik>
-        </div>
   )
 }
 

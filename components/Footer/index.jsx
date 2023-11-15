@@ -14,7 +14,6 @@ const Footer = () => {
         {icon:<BiLogoFacebook />, link:"/"} ,
         {icon:<BiLogoLinkedin />, link:"/"} ,
         {icon:<AiOutlineTwitter />, link:"/"} ,
-        {icon:<BiLogoPinterestAlt />, link:"/"} 
     ];
   
     const FOOTERLINKS = [
@@ -32,7 +31,9 @@ const Footer = () => {
                             <div className="col-lg-4 col-md-5">
                                 <div className={style.footer_dec_wrapper}>
                                     <div className={style.logo}>
-                                        <img src={logo.src} alt="img"/>
+                                        <Link href={"/"}>
+                                            <img src={logo.src} alt="img"/>
+                                        </Link>
                                     </div>
                                     <div className={style.footer_dec}>
                                         Subscribe to our news letter to get latest updates
@@ -67,7 +68,7 @@ const Footer = () => {
                     </div>
                 </Container>
                 <div className={style.footer_end}>
-                    @ 2023 Fegno Technologies
+                    © developed by Fegno Technologies by Zapiens Innovation Pvt Ltd
                 </div>
             </div>
     )

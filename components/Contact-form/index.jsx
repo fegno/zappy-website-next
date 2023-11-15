@@ -8,19 +8,20 @@ const ContactForm = () => {
     const INITIAL_VALUES = {
         name: "",
         email: "",
-        subject: "",
+        phone: "",
         message: "",
     };
     const VALIDATION = Yup.object().shape({
         name : Yup.string().required("please enter your name") ,
         email : Yup.string().required("Please enter email").email("Enter a valid email"),
-        subject : Yup.string().required("please enter the subject") ,
+        phone : Yup.string().required("please enter the phone number") ,
         message : Yup.string().required("please enter the message") ,
     });
     const handleSubmit = ( values , {resetForm} ) => {
         console.log("values" , values);
         resetForm();
     }
+    
     return (
         <div className={style.contact_form_wrapper}>
             <Formik
@@ -46,7 +47,7 @@ const ContactForm = () => {
                                     <ErrorMessage name="name" />
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-6">
+                            <div className={`col-12 col-sm-6 ${style.email_wrapper}`}>
                                 <InputField 
                                     type="email"
                                     name="email"
@@ -64,15 +65,15 @@ const ContactForm = () => {
                         <div className={style.subject_fld}>
                             <InputField
                                 type="text"
-                                name="subject"
-                                value={values.subject}
+                                name="phone"
+                                value={values.phone}
                                 onChange={handleChange}
                                 onBlur={handleBlur}
-                                placeholder="Subject"
+                                placeholder="Phone number"
                                 className={style.full_width}
                             />
                             <div className={style.error_msg}>
-                                <ErrorMessage name="subject" />
+                                <ErrorMessage name="phone" />
                             </div>
                         </div>
                         <div className={style.msg_fld}>

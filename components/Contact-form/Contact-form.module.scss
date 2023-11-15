@@ -19,6 +19,7 @@
                 border-radius: 30px;
                 border: none;
                 padding: 20px;
+                margin-top: 14px;
                 width: 100%;
                 &:focus{
                     outline: none;
@@ -41,5 +42,11 @@
                 font-weight: 400;
             }
         }
+        @include phone{
+            .email_wrapper{
+                margin-top: 20px;
+            }
+        }
     }
+    
 }

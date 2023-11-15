@@ -2,10 +2,11 @@ import React from 'react';
 import img from '../../assets/app-store.png';
 import style from './Download.module.scss';
 import Link from 'next/link';
+import play_store from '../../assets/play-store.png';
 
 const Download = () => {
     const App = [
-        {image : img.src , link:"https://play.google.com/store/games?device=windows" },
+        {image : play_store.src , link:"https://play.google.com/store/games?device=windows" },
         {image : img.src , link:"https://www.apple.com/in/app-store/" }
     ];
 

@@ -32,15 +32,9 @@
             object-fit: contain;
         }
     }
-    .about_img_mob{
-        display: none;
-    }
-    @include phone{
-        .about_img{
-            display: none;
-        }
-        .about_img_mob{
-            display: block;
-        }
+    .news_letter{
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
     }
 }

@@ -5,14 +5,14 @@ import { AiOutlineClose, AiOutlineCaretDown } from 'react-icons/ai';
 import { LiaAngleDownSolid } from 'react-icons/lia';
 
 const Sidebar = ({ onClose }) => {
+    const [isSubmenuVisible, setIsSubmenuVisible] = useState(false);
+
     const MENUS = [
         { name: "Home", link: "/" },
         { name: "About Us", link: "about" },
         { name: "Contact Us", link: "/contact-us" },
-        { name: "Join Us", link: "/", hasSubmenu: true }, 
+        { name: "Join Us", link: "/", hasSubmenu: true },
     ];
-
-    const [isSubmenuVisible, setIsSubmenuVisible] = useState(false);
 
     const toggleSubmenu = () => {
         setIsSubmenuVisible(!isSubmenuVisible);
@@ -39,7 +39,7 @@ const Sidebar = ({ onClose }) => {
                                 )}
                             </div>
                         ) : (
-                            <Link href={item.link}>{item.name}</Link>
+                            <Link href={item.link} onClick={onClose}>{item.name}</Link>
                         )}
                     </li>
                 ))}

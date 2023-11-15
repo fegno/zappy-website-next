@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Terms-and-conditions.module.scss';
 import Container from '@/components/Container';
-import NewsLetter from '@/components/Newsletter';
+import NewsLtrForm from '@/components/News-letter-form';
 
 const TermAndConditions = () => {
     return (
@@ -215,9 +215,9 @@ const TermAndConditions = () => {
                     </div>
                 </div>
             </div>
-            <div className={style.news_letter}>
-                <NewsLetter />
-            </div>
+            {/* <div className={style.news_letter}>
+                <NewsLtrForm />
+            </div> */}
         </Container>
     )
 }

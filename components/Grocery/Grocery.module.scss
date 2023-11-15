@@ -22,9 +22,13 @@
             font-size: 18px;
             font-weight: 600;
         }
+        .grocery_card_detail{
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
         .card_img{
             img{
-                // max-width: 800px;
                 background-color: map-get($colors , "white" );
                 width: 100%;
                 max-width: 480px;
@@ -37,6 +41,13 @@
             text-align: center;
             .card_img{
                 margin-top: 40px;
+            }
+        }
+    }
+    @include phone{
+        .grocery_card_section{
+            .grocery_card_detail{
+                font-size: 14px;
             }
         }
     }

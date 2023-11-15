@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './App-showcase.module.scss';
-import Container from '../Container';
-import phone from '../../assets/phone.png';
+import app from '../../assets/show-case.jpg';
 import Download from '../download';
 
 const Showcase = () => {
@@ -10,7 +9,7 @@ const Showcase = () => {
                 <div className="row">
                     <div className="col-sm-7">
                         <div className={style.showcase_img}>
-                            <img src={phone.src} alt="img" />
+                            <img src={app.src} alt="img" />
                         </div>
                     </div>
                     <div className={`col-sm-5 ${style.showcase_details}`}>

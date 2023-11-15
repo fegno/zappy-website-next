@@ -5,6 +5,9 @@ import Link from 'next/link';
 const ContactCard = ({data}) => {
     return (
         <div className={style.contact_card}>
+            <div className={style.contact_sec}>
+                {data?.title}
+            </div>  
             <div className={style.contact_first}>
                 <div className={style.contact_icon}>
                     {data?.icon}
@@ -17,9 +20,6 @@ const ContactCard = ({data}) => {
                 <span className={style.contact_text}>{data.text}</span>
                 )}
             </div>
-            <div className={style.contact_sec}>
-                {data?.title}
-            </div>  
         </div>
     )
 }
