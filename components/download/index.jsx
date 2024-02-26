@@ -6,8 +6,8 @@ import play_store from '../../assets/play-store.png';
 
 const Download = () => {
     const App = [
-        {image : play_store.src , link:"https://play.google.com/store/games?device=windows" },
-        {image : img.src , link:"https://www.apple.com/in/app-store/" }
+        {image : play_store.src , link:"https://play.google.com/store/apps/details?id=com.fegno.zappiens_customer_app&pli=1" },
+        {image : img.src , link:"https://apps.apple.com/in/app/zappy-shop-your-daily-needs/id6471227973" }
     ];
 
     return (

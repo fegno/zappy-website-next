@@ -15,9 +15,9 @@ const HomePage = () => {
             <Grocery />
             <Features />
             <RegisterCard 
-              title="Become a Sellor" 
+              title="Become a Seller" 
               description="Register as a seller and open shop for start your business" 
-              link="/" 
+              link="/store-registration" 
               image={seller.src}
             />
             <Showcase />

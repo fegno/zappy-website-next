@@ -35,7 +35,7 @@ const Footer = () => {
                                             <img src={logo.src} alt="img"/>
                                         </Link>
                                     </div>
-                                    <div className={style.footer_dec}>
+                                    {/* <div className={style.footer_dec}>
                                         Subscribe to our news letter to get latest updates
                                     </div>
                                     {SOCIAL.map((item) => {
@@ -44,8 +44,9 @@ const Footer = () => {
                                                 {item.icon}
                                             </Link>
                                         )
-                                    })}
+                                    })} */}
                                     <div className={style.app_links}>
+                                        <div>Download from the stores</div>
                                         <Download />
                                     </div>
                                 </div>

@@ -14,7 +14,7 @@ const Showcase = () => {
                     </div>
                     <div className={`col-sm-5 ${style.showcase_details}`}>
                         <div className={style.showcase_name}>
-                            Dowload app and enjoy more!
+                            Download app and enjoy more!
                         </div>
                         <div className={style.showcase_dec}>
                             Download app from
