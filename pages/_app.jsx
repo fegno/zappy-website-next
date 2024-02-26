@@ -9,16 +9,14 @@ import { ToastContainer } from "react-toastify";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <title>Zappy</title>
-        <link rel="icon" href="/logo.png" />
-      </Head>
-      <Layout>
-        <ToastContainer>
+        <Head>
+          <title>Zappy</title>
+          <link rel="icon" href="/logo.png" />
+        </Head>
+        <Layout>
+          <ToastContainer />
           <Component {...pageProps} />
-        </ToastContainer>
-      </Layout>
-    </>
+        </Layout>    </>
   );
 }
 
