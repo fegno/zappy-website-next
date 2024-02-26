@@ -14,10 +14,10 @@ const ContactCard = ({data}) => {
                 </div>
                 {data?.link ? (
                     <Link href={data.link}>
-                        <div className={style.contact_text}>{data.text}</div>
+                        <div className={style.contact_text} dangerouslySetInnerHTML={{__html:data?.text}}></div>
                     </Link>
                 ) : (
-                <span className={style.contact_text}>{data.text}</span>
+                <span className={style.contact_text} dangerouslySetInnerHTML={{__html:data?.text}}></span>
                 )}
             </div>
         </div>

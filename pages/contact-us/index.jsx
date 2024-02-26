@@ -10,16 +10,16 @@ import NewsLtrForm from '@/components/News-letter-form';
 
 const Contact = () => {
     const ContactData = [
-        { icon : <FiPhoneCall /> , title:"Call us" , link:"tel:+880123456789" , text:"+880123456789"},
-        { icon : <MdOutlineAttachEmail /> , title:"Email" , link:"mailto:admin@gmail.com" , text:"admin@gmail.com"},
-        { icon : <IoLocationOutline /> , title:"Address" , text:"Test"},
+        { icon : <FiPhoneCall /> , title:"Call us" , link:"tel:+91 9778429687" , text:"+91 9778429687"},
+        { icon : <MdOutlineAttachEmail /> , title:"Email" , link:"mailto:hello@zappyshopy.com" , text:"hello@zappyshopy.com"},
+        { icon : <IoLocationOutline /> , title:"Address" , text:"Zapiens Innovation </br> Kakkanad, Kochi, Kerala"},
     ];
 
     return (
         <Container>
             <div className={style.contact_page}>
                 <div className="row">
-                    <div className={`col-12 col-md-6 ${style.contact_card_sec}`}>
+                    <div className={`col-12 col-lg-6 ${style.contact_card_sec}`}>
                             <div className="row">
                                 {ContactData?.map((item, index) => {
                                     const isLastCard = index === ContactData.length - 1;
@@ -32,8 +32,10 @@ const Contact = () => {
                                 })}
                             </div>
                     </div>
-                    <div className={`col-12 col-md-6 ${style.contact_form_sec}`}>
+                    <div className={`col-12 col-lg-6 ${style.contact_form_sec}`}>
+                        <div className={style?.form_wrapper}>
                         <ContactForm />
+                        </div>
                     </div>
                 </div>
             </div>

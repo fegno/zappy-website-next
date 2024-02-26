@@ -68,7 +68,7 @@ const Footer = () => {
                     </div>
                 </Container>
                 <div className={style.footer_end}>
-                    © developed by Fegno Technologies by Zapiens Innovation Pvt Ltd
+                    © Developed by <Link href="https://fegno.com" target='_blank'>Fegno Technologies</Link> by Zapiens Innovation Pvt Ltd
                 </div>
             </div>
     )
