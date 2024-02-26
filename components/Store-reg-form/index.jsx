@@ -8,6 +8,7 @@ import img from '../../assets/img1.jpg'
 import img2 from '../../assets/img2.jpg'
 import { http } from '../../axios/http';
 import imgcon from '../../assets/contact.jpg';
+import { toast } from 'react-toastify';
 
 const StoreRegForm = () => {
     const [captcha, setCaptcha] = useState('');
@@ -106,11 +107,12 @@ const StoreRegForm = () => {
         })
           .then((res) => {
             resetForm(formData);
-            console.log('values', res);
             setImageFile("");
+            toast.success("Store registration successfull")
           })
           .catch((error) => {
             console.error('Error submitting form:', error);
+            toast.error("Something went wrong")
             if (error.response) {
                 console.error('Response status:', error.response.status);
                 console.error('Response data:', error.response.data);
